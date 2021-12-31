@@ -1,0 +1,68 @@
+.icon-back {
+  font-size: 30px;
+  color: #b1b1b1 !important;
+  cursor: pointer;
+}
+
+.icon-input {
+  position: absolute;
+  margin: 10px 0 0 10px;
+  font-size: 18px;
+  color: #193498b7;
+}
+
+.form-space {
+  margin: 5rem 0;
+}
+
+.form-space-r {
+  margin: 3rem 0;
+}
+
+.sp-row {
+  padding: 0 20px;
+}
+
+.title-sign {
+  font-size: 25px;
+  font-weight: 700;
+  color: #193498;
+  margin-bottom: 0 !important;
+}
+
+.p-sign {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1934988c;
+}
+
+.alert {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 4px 0 !important;
+  padding: 0 !important;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #193498;
+  border-color: #193498;
+}
+
+.p-primary-b {
+  color: #193498;
+  font-weight: 600;
+}
+
+.opt {
+  margin: 0 !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.form-control {
+  padding: 0.375rem 0.5rem 0.375rem 2rem !important;
+}
