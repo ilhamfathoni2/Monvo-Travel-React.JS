@@ -4,11 +4,16 @@ import { UserContext } from "../../context/userContext";
 import { API } from "../../config/api";
 import { Button, Form, Container, Card, Alert, Image } from "react-bootstrap";
 import { FiAlertTriangle, FiMail, FiLock } from "react-icons/fi";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import iconMonvo from "../../assets/icon-login.png";
 import "./auth.css";
 
 import { useFormik } from "formik";
 import * as Yup from "yup";
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function LogIn() {
   let navigate = useNavigate();
@@ -61,6 +66,14 @@ function LogIn() {
     },
   });
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <>
       <Container className="py-5">
@@ -69,6 +82,20 @@ function LogIn() {
           <h3 className="title-sign">Welcome Back</h3>
           <p className="p-sign">Sign to continue</p>
         </div>
+        <Slider {...settings}>
+          <div className="text-center">
+            <Image src={iconMonvo} />
+            <h5>01</h5>
+          </div>
+          <div className="text-center">
+            <Image src={iconMonvo} />
+            <h5>02</h5>
+          </div>
+          <div className="text-center">
+            <Image src={iconMonvo} />
+            <h5>03</h5>
+          </div>
+        </Slider>
         <div className="form-space">
           <Form onSubmit={formik.handleSubmit}>
             <div className="sp-row">
@@ -106,7 +133,11 @@ function LogIn() {
               </Form.Group>
               <div className="d-grid gap-2 mt-5 mb-4">
                 <Button type="submit" variant="primary" size="lg">
-                  LOGIN
+                  {isLoading ? (
+                    <AiOutlineLoading3Quarters className="loading" />
+                  ) : (
+                    "LOGIN"
+                  )}
                 </Button>
               </div>
               <p className="text-center opt">Don’t have account?</p>
