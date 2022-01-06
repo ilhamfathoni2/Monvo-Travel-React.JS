@@ -6,6 +6,7 @@ import { API, setAuthToken } from "./config/api";
 
 import LogIn from "./components/auth/login";
 import Register from "./components/auth/register";
+import Home from "./pages/home";
 
 if (localStorage.token) {
   setAuthToken(localStorage.token);
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LogIn />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
     </>
   );

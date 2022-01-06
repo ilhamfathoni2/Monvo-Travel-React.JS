@@ -11,10 +11,6 @@ import "./auth.css";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
 function LogIn() {
   let navigate = useNavigate();
   const [, dispatch] = useContext(UserContext);
@@ -66,14 +62,6 @@ function LogIn() {
     },
   });
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
   return (
     <>
       <Container className="py-5">
@@ -82,24 +70,11 @@ function LogIn() {
           <h3 className="title-sign">Welcome Back</h3>
           <p className="p-sign">Sign to continue</p>
         </div>
-        <Slider {...settings}>
-          <div className="text-center">
-            <Image src={iconMonvo} />
-            <h5>01</h5>
-          </div>
-          <div className="text-center">
-            <Image src={iconMonvo} />
-            <h5>02</h5>
-          </div>
-          <div className="text-center">
-            <Image src={iconMonvo} />
-            <h5>03</h5>
-          </div>
-        </Slider>
         <div className="form-space">
           <Form onSubmit={formik.handleSubmit}>
             <div className="sp-row">
-              <Form.Group className="mb-4">
+              {message && message}
+              <Form.Group className="mb-4 mt-2">
                 <FiMail className="icon-input" />
                 <Form.Control
                   name="email"
