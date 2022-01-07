@@ -16,7 +16,7 @@ function Nvabar() {
     <>
       <div className="navbar">
         <Container className="d-flex justify-content-between mrg-nav">
-          <MdHomeFilled className="icon-nav" />
+          <MdHomeFilled className="icon-nav-active" />
           <MdBookmark className="icon-nav" />
           <MdNotifications className="icon-nav" />
           <MdPerson className="icon-nav" />

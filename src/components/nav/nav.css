@@ -1,5 +1,6 @@
 .navbar {
   position: fixed;
+  z-index: 99999 !important;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -19,4 +20,9 @@
 .icon-nav {
   font-size: 30px;
   color: #818181;
+}
+
+.icon-nav-active {
+  font-size: 30px;
+  color: #193498;
 }

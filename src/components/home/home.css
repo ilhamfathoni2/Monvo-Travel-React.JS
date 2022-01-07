@@ -13,18 +13,21 @@ body {
 }
 
 .title-popular {
-  margin: 0 0 0 14px !important;
+  margin: 0 !important;
 }
 
 .card-body {
   padding: 0.5rem 0.5rem !important;
 }
 
-.popular-slider {
-  margin: 0 0 0 -10px !important;
+.img-popular {
+  border-radius: 5px;
+  width: 140px;
+  height: 115px;
+  object-fit: cover;
 }
 
-.img-popular {
+.img-other {
   border-radius: 5px;
   width: 125px;
   height: 115px;
@@ -32,8 +35,13 @@ body {
 }
 
 .card-popular {
+  width: 10rem !important;
+  margin-top: 10px !important;
+}
+
+.card-other {
   width: 9rem !important;
-  margin: 10px 0 0 0 !important;
+  margin: 10px 12px 0 0 !important;
 }
 
 .place {
@@ -50,4 +58,8 @@ body {
   margin: 0 0 2px 0 !important;
   font-size: 15px;
   color: #193498;
+}
+
+.mb-8 {
+  margin-bottom: 150px;
 }
