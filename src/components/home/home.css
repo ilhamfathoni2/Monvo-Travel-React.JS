@@ -1,6 +1,53 @@
+body {
+  background-color: #f5f5f5;
+}
+
+.form-search {
+  padding: 0.375rem 0.5rem 0.375rem 0.5rem !important;
+}
+
+.btn-search {
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.title-popular {
+  margin: 0 0 0 14px !important;
+}
+
+.card-body {
+  padding: 0.5rem 0.5rem !important;
+}
+
+.popular-slider {
+  margin: 0 0 0 -10px !important;
+}
+
 .img-popular {
   border-radius: 5px;
-  width: 130px;
-  height: 200px;
+  width: 125px;
+  height: 115px;
   object-fit: cover;
+}
+
+.card-popular {
+  width: 9rem !important;
+  margin: 10px 0 0 0 !important;
+}
+
+.place {
+  margin: 8px 0 2px 0 !important;
+}
+
+.country {
+  margin: 0 0 2px 0 !important;
+  font-size: 13px;
+  color: rgb(124, 124, 124);
+}
+
+.price {
+  margin: 0 0 2px 0 !important;
+  font-size: 15px;
+  color: #193498;
 }
