@@ -46,7 +46,7 @@ function LogIn() {
           });
           let userId = JSON.stringify(response.data.data.id);
           localStorage.setItem("id", userId);
-          navigate("/register");
+          navigate("/home");
         } else {
           navigate("/");
         }
