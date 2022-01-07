@@ -1,21 +1,17 @@
-import React, { useState, useContext } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
-import {
-  Button,
-  FormControl,
-  Container,
-  Card,
-  Alert,
-  Image,
-  InputGroup,
-} from "react-bootstrap";
+import { Container, Card, Image } from "react-bootstrap";
 import "./home.css";
 
 import santorini from "../../assets/santorini1.jpg";
 import eiffel from "../../assets/eiffelTower.jpg";
 import giethoorn from "../../assets/giethoorn-belanda.jpg";
-import { FiSearch } from "react-icons/fi";
-import Nvabar from "../nav/navbar";
+import star5 from "../../assets/star5.png";
+import star4 from "../../assets/star4.png";
+import star3 from "../../assets/star3.png";
+import star2 from "../../assets/star2.png";
+import star1 from "../../assets/star1.png";
+import { MdLocationPin } from "react-icons/md";
 
 function Other() {
   let navigate = useNavigate();
@@ -24,58 +20,54 @@ function Other() {
     <>
       <Container className="mt-3 mb-8">
         <h6 className="title-popular">Other</h6>
-        <div className="d-flex flex-wrap">
-          <Card className="card-other">
-            <Card.Body>
-              <div className="d-flex justify-content-center">
-                <Image src={santorini} className="img-other" />
-              </div>
+        <Card className="card-others mt-2">
+          <Card.Body className="d-flex">
+            <div className="img-left">
+              <Image src={santorini} className="img-other" />
+            </div>
+            <div>
               <h6 className="place">Santorini</h6>
-              <p className="country">Yunani</p>
+              <p className="country">
+                <MdLocationPin className="map" />
+                Yunani
+              </p>
               <p className="price">25.000.000</p>
-            </Card.Body>
-          </Card>
-          <Card className="card-other">
-            <Card.Body>
-              <div className="d-flex justify-content-center">
-                <Image src={eiffel} className="img-other" />
-              </div>
+              <Image src={star4} className="star" />
+            </div>
+          </Card.Body>
+        </Card>
+        <Card className="card-others mt-2">
+          <Card.Body className="d-flex">
+            <div className="img-left">
+              <Image src={eiffel} className="img-other" />
+            </div>
+            <div>
               <h6 className="place">Eiffel Tower</h6>
-              <p className="country">French</p>
-              <p className="price">15.000.000</p>
-            </Card.Body>
-          </Card>
-          <Card className="card-other">
-            <Card.Body>
-              <div className="d-flex justify-content-center">
-                <Image src={giethoorn} className="img-other" />
-              </div>
+              <p className="country">
+                <MdLocationPin className="map" />
+                Yunani
+              </p>
+              <p className="price">18.000.000</p>
+              <Image src={star3} className="star" />
+            </div>
+          </Card.Body>
+        </Card>
+        <Card className="card-others mt-2">
+          <Card.Body className="d-flex">
+            <div className="img-left">
+              <Image src={giethoorn} className="img-other" />
+            </div>
+            <div>
               <h6 className="place">Giethoorn</h6>
-              <p className="country">Netherlands</p>
+              <p className="country">
+                <MdLocationPin className="map" />
+                Yunani
+              </p>
               <p className="price">16.000.000</p>
-            </Card.Body>
-          </Card>
-          <Card className="card-other">
-            <Card.Body>
-              <div className="d-flex justify-content-center">
-                <Image src={santorini} className="img-other" />
-              </div>
-              <h6 className="place">Santorini</h6>
-              <p className="country">Yunani</p>
-              <p className="price">25.000.000</p>
-            </Card.Body>
-          </Card>
-          <Card className="card-other">
-            <Card.Body>
-              <div className="d-flex justify-content-center">
-                <Image src={giethoorn} className="img-other" />
-              </div>
-              <h6 className="place">Giethoorn</h6>
-              <p className="country">Netherlands</p>
-              <p className="price">16.000.000</p>
-            </Card.Body>
-          </Card>
-        </div>
+              <Image src={star4} className="star" />
+            </div>
+          </Card.Body>
+        </Card>
       </Container>
     </>
   );

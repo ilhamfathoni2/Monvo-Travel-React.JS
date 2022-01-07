@@ -29,9 +29,13 @@ body {
 
 .img-other {
   border-radius: 5px;
-  width: 125px;
-  height: 115px;
+  width: 120px;
+  height: 100px;
   object-fit: cover;
+}
+
+.img-left {
+  margin-right: 20px;
 }
 
 .card-popular {
@@ -42,6 +46,10 @@ body {
 .card-other {
   width: 9rem !important;
   margin: 10px 12px 0 0 !important;
+}
+
+.card-others {
+  width: 100% !important;
 }
 
 .place {
@@ -62,4 +70,13 @@ body {
 
 .mb-8 {
   margin-bottom: 150px;
+}
+
+.star {
+  width: 85px !important;
+}
+
+.map {
+  font-size: 14px;
+  margin-top: -4px;
 }
