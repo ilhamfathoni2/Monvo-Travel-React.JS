@@ -9,7 +9,6 @@
 }
 
 .list {
-  margin: 0 0 0 18px;
   padding: 0 !important;
 }
 
@@ -27,6 +26,12 @@
   box-shadow: 2px 3px 9px -1px rgba(41, 41, 41, 0.35);
 }
 
-.user-space {
-  padding: 25px !important;
+.mb-user {
+  margin-bottom: 100px !important;
+}
+
+.edit-icon {
+  margin-top: 4px;
+  margin-left: 15px;
+  font-size: 18px !important;
 }
