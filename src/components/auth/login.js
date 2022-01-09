@@ -107,13 +107,15 @@ function LogIn() {
                 )}
               </Form.Group>
               <div className="d-grid gap-2 mt-5 mb-4">
-                <Button type="submit" variant="primary" size="lg">
-                  {isLoading ? (
+                {isLoading ? (
+                  <Button disabled variant="primary" size="lg">
                     <AiOutlineLoading3Quarters className="loading" />
-                  ) : (
-                    "LOGIN"
-                  )}
-                </Button>
+                  </Button>
+                ) : (
+                  <Button type="submit" variant="primary" size="lg">
+                    LOGIN
+                  </Button>
+                )}
               </div>
               <p className="text-center opt">Don’t have account?</p>
               <p
