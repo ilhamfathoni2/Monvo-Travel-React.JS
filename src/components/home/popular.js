@@ -18,6 +18,7 @@ import santorini from "../../assets/santorini1.jpg";
 import eiffel from "../../assets/eiffelTower.jpg";
 import giethoorn from "../../assets/giethoorn-belanda.jpg";
 import { FiSearch } from "react-icons/fi";
+import { MdLocationPin } from "react-icons/md";
 import Nvabar from "../nav/navbar";
 
 function Popular() {
@@ -53,7 +54,10 @@ function Popular() {
                   <Image src={santorini} className="img-popular" />
                 </div>
                 <h6 className="place">Santorini</h6>
-                <p className="country">Yunani</p>
+                <p className="country">
+                  <MdLocationPin className="map" />
+                  Yunani
+                </p>
                 <p className="price">25.000.000</p>
               </Card.Body>
             </Card>
@@ -65,7 +69,10 @@ function Popular() {
                   <Image src={eiffel} className="img-popular" />
                 </div>
                 <h6 className="place">Eiffel Tower</h6>
-                <p className="country">French</p>
+                <p className="country">
+                  <MdLocationPin className="map" />
+                  French
+                </p>
                 <p className="price">15.000.000</p>
               </Card.Body>
             </Card>
@@ -77,10 +84,16 @@ function Popular() {
                   <Image src={giethoorn} className="img-popular" />
                 </div>
                 <h6 className="place">Giethoorn</h6>
-                <p className="country">Netherlands</p>
+                <p className="country">
+                  <MdLocationPin className="map" />
+                  Netherlands
+                </p>
                 <p className="price">16.000.000</p>
               </Card.Body>
             </Card>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card className="card-empty"></Card>
           </SwiperSlide>
         </Swiper>
       </Container>

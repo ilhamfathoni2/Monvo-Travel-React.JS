@@ -2,6 +2,27 @@ body {
   background-color: #f5f5f5;
 }
 
+.tagline-home {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 13px;
+  color: #212121;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 175px;
+}
+
+.avatar {
+  border-radius: 6px;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin: 29px 13px 0 0;
+  -webkit-box-shadow: 2px 3px 9px -1px rgba(41, 41, 41, 0.35);
+  -moz-box-shadow: 2px 3px 9px -1px rgba(41, 41, 41, 0.35);
+  box-shadow: 2px 3px 9px -1px rgba(41, 41, 41, 0.35);
+}
+
 .form-search {
   padding: 0.375rem 0.5rem 0.375rem 0.5rem !important;
 }
@@ -13,7 +34,7 @@ body {
 }
 
 .title-popular {
-  margin: 0 !important;
+  margin: 0 0 0 5px !important;
 }
 
 .card-body {
@@ -21,14 +42,14 @@ body {
 }
 
 .img-popular {
-  border-radius: 5px;
+  border-radius: 8px;
   width: 140px;
   height: 115px;
   object-fit: cover;
 }
 
 .img-other {
-  border-radius: 5px;
+  border-radius: 8px;
   width: 120px;
   height: 100px;
   object-fit: cover;
@@ -41,6 +62,12 @@ body {
 .card-popular {
   width: 10rem !important;
   margin-top: 10px !important;
+  margin-bottom: 20px !important;
+  border: none !important;
+  border-radius: 8px !important;
+  -webkit-box-shadow: 2px 3px 9px -1px rgba(41, 41, 41, 0.35);
+  -moz-box-shadow: 2px 3px 9px -1px rgba(41, 41, 41, 0.35);
+  box-shadow: 2px 3px 9px -1px rgba(41, 41, 41, 0.35);
 }
 
 .card-other {
@@ -50,6 +77,11 @@ body {
 
 .card-others {
   width: 100% !important;
+  border: none !important;
+  border-radius: 8px !important;
+  -webkit-box-shadow: 2px 3px 9px -1px rgba(41, 41, 41, 0.35);
+  -moz-box-shadow: 2px 3px 9px -1px rgba(41, 41, 41, 0.35);
+  box-shadow: 2px 3px 9px -1px rgba(41, 41, 41, 0.35);
 }
 
 .place {
@@ -79,4 +111,10 @@ body {
 .map {
   font-size: 14px;
   margin-top: -4px;
+  margin-left: -2.4px !important;
+}
+
+.card-empty {
+  width: 10rem !important;
+  border: none !important;
 }

@@ -2,11 +2,13 @@ import React from "react";
 import Popular from "../components/home/popular";
 import { Container } from "react-bootstrap";
 import Other from "../components/home/other";
+import Tagline from "../components/home/tagline";
 
 function Home() {
   return (
     <>
-      <Container className="py-5">
+      <Container>
+        <Tagline />
         <Popular />
         <Other />
       </Container>
