@@ -19,6 +19,9 @@ function App() {
         <Route path="/" element={<LogIn />} />
         <Route path="/register" element={<Register />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/cart" element={<Home />} />
+        <Route path="/notif" element={<Home />} />
+        <Route path="/user" element={<Home />} />
       </Routes>
     </>
   );
