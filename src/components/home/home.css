@@ -5,7 +5,6 @@ body {
 .tagline-home {
   font-size: 20px;
   font-weight: 700;
-  margin-left: 13px;
   color: #212121;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -17,7 +16,7 @@ body {
   width: 40px;
   height: 40px;
   object-fit: cover;
-  margin: 29px 13px 0 0;
+  margin: 29px 0 0 0;
   -webkit-box-shadow: 2px 3px 9px -1px rgba(41, 41, 41, 0.35);
   -moz-box-shadow: 2px 3px 9px -1px rgba(41, 41, 41, 0.35);
   box-shadow: 2px 3px 9px -1px rgba(41, 41, 41, 0.35);
@@ -31,6 +30,10 @@ body {
   position: relative;
   font-size: 20px;
   font-weight: bold;
+}
+
+.m-swiper {
+  margin: 0 0 0 10px;
 }
 
 .title-popular {

@@ -9,7 +9,7 @@ import {
   MdPerson,
 } from "react-icons/md";
 
-function Nvabar() {
+function Nav() {
   let navigate = useNavigate();
 
   return (
@@ -54,4 +54,4 @@ function Nvabar() {
   );
 }
 
-export default Nvabar;
+export default Nav;

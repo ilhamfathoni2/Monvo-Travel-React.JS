@@ -19,14 +19,12 @@ import eiffel from "../../assets/eiffelTower.jpg";
 import giethoorn from "../../assets/giethoorn-belanda.jpg";
 import { FiSearch } from "react-icons/fi";
 import { MdLocationPin } from "react-icons/md";
-import Nvabar from "../nav/navbar";
 
 function Popular() {
   let navigate = useNavigate();
 
   return (
     <>
-      <Nvabar />
       <Container>
         <InputGroup className="mb-3">
           <FormControl
@@ -39,10 +37,10 @@ function Popular() {
           </Button>
         </InputGroup>
       </Container>
-      <Container>
+      <div className="m-swiper">
         <h6 className="title-popular">Popular</h6>
         <Swiper
-          spaceBetween={135}
+          spaceBetween={90}
           slidesPerView={2}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
@@ -102,7 +100,7 @@ function Popular() {
             <Card className="card-empty"></Card>
           </SwiperSlide>
         </Swiper>
-      </Container>
+      </div>
     </>
   );
 }

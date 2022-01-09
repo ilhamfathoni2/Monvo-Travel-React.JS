@@ -6,7 +6,7 @@ import { FiMail, FiLogOut, FiPhone, FiMapPin } from "react-icons/fi";
 import { AiOutlineUser } from "react-icons/ai";
 import avatar from "../../assets/Avatar.png";
 import { UserContext } from "../../context/userContext";
-import Nvabar from "../nav/navbar";
+import Nav from "../nav/navbar";
 
 function AccountUser() {
   const [, dispatch] = useContext(UserContext);
@@ -23,7 +23,7 @@ function AccountUser() {
 
   return (
     <>
-      <Nvabar />
+      <Nav />
       <Container className="user-space">
         <div className="d-flex justify-content-center mb-3">
           <Image src={avatar} className="avatar-account mt-3" />
