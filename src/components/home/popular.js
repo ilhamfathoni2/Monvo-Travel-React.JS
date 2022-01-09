@@ -42,7 +42,7 @@ function Popular() {
       <Container>
         <h6 className="title-popular">Popular</h6>
         <Swiper
-          spaceBetween={40}
+          spaceBetween={135}
           slidesPerView={2}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
@@ -53,11 +53,13 @@ function Popular() {
                 <div className="d-flex justify-content-center">
                   <Image src={santorini} className="img-popular" />
                 </div>
-                <h6 className="place">Santorini</h6>
-                <p className="country">
-                  <MdLocationPin className="map" />
-                  Yunani
-                </p>
+                <div className="d-flex justify-content-between">
+                  <h6 className="place">Santorini</h6>
+                  <p className="country">
+                    <MdLocationPin className="map" />
+                    Yunani
+                  </p>
+                </div>
                 <p className="price">25.000.000</p>
               </Card.Body>
             </Card>
@@ -68,11 +70,13 @@ function Popular() {
                 <div className="d-flex justify-content-center">
                   <Image src={eiffel} className="img-popular" />
                 </div>
-                <h6 className="place">Eiffel Tower</h6>
-                <p className="country">
-                  <MdLocationPin className="map" />
-                  French
-                </p>
+                <div className="d-flex justify-content-between">
+                  <h6 className="place">Eiffel Tower</h6>
+                  <p className="country">
+                    <MdLocationPin className="map" />
+                    French
+                  </p>
+                </div>
                 <p className="price">15.000.000</p>
               </Card.Body>
             </Card>
@@ -83,11 +87,13 @@ function Popular() {
                 <div className="d-flex justify-content-center">
                   <Image src={giethoorn} className="img-popular" />
                 </div>
-                <h6 className="place">Giethoorn</h6>
-                <p className="country">
-                  <MdLocationPin className="map" />
-                  Netherlands
-                </p>
+                <div className="d-flex justify-content-between">
+                  <h6 className="place">Giethoorn</h6>
+                  <p className="country">
+                    <MdLocationPin className="map" />
+                    Netherlands
+                  </p>
+                </div>
                 <p className="price">16.000.000</p>
               </Card.Body>
             </Card>
