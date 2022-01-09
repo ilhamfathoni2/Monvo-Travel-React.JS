@@ -65,7 +65,7 @@ function LogIn() {
   return (
     <>
       <Container className="py-5">
-        <div className="text-center mb-login">
+        <div className="text-center">
           <Image src={iconMonvo} />
           <h3 className="title-sign">Welcome Back</h3>
           <p className="p-sign">Sign to continue</p>

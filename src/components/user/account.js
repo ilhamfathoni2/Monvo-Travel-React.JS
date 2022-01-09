@@ -1,10 +1,12 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import { Container, Image } from "react-bootstrap";
+import { Container, Image, Card } from "react-bootstrap";
 import "./user.css";
-import { FiArrowLeft, FiMail, FiLogOut } from "react-icons/fi";
+import { FiMail, FiLogOut, FiPhone, FiMapPin } from "react-icons/fi";
+import { AiOutlineUser } from "react-icons/ai";
 import avatar from "../../assets/Avatar.png";
 import { UserContext } from "../../context/userContext";
+import Nvabar from "../nav/navbar";
 
 function AccountUser() {
   const [, dispatch] = useContext(UserContext);
@@ -21,24 +23,33 @@ function AccountUser() {
 
   return (
     <>
-      <Container>
-        <FiArrowLeft
-          className="mt-4 icon-back"
-          onClick={() => {
-            navigate("/home");
-          }}
-        />
-        <div className="d-flex justify-content-center mb-5">
+      <Nvabar />
+      <Container className="user-space">
+        <div className="d-flex justify-content-center mb-3">
           <Image src={avatar} className="avatar-account mt-3" />
         </div>
-        <div className="d-flex list">
-          <FiMail className="icon-user" />
-          <p>ilham@gmail.com</p>
-        </div>
-        <div className="d-flex list text-danger" onClick={handleLogout}>
-          <FiLogOut className="icon-user" />
-          <p>Logout</p>
-        </div>
+        <Card className="card-user">
+          <div className="d-flex list">
+            <AiOutlineUser className="icon-user" />
+            <p>Ilham Fathoni</p>
+          </div>
+          <div className="d-flex list">
+            <FiMail className="icon-user" />
+            <p>ilham@gmail.com</p>
+          </div>
+          <div className="d-flex list">
+            <FiPhone className="icon-user" />
+            <p>0821xxxxxxxxx</p>
+          </div>
+          <div className="d-flex list">
+            <FiMapPin className="icon-user" />
+            <p>Sidoarjo, Jawa Timur</p>
+          </div>
+          <div className="d-flex list text-danger mt-4" onClick={handleLogout}>
+            <FiLogOut className="icon-user" />
+            <p>Logout</p>
+          </div>
+        </Card>
       </Container>
     </>
   );
